@@ -13,6 +13,7 @@
 		338E80012080D80B0090311E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 338E80002080D80B0090311E /* Assets.xcassets */; };
 		338E80042080D80B0090311E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 338E80022080D80B0090311E /* LaunchScreen.storyboard */; };
 		338E800C2080D89D0090311E /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338E800B2080D89D0090311E /* Menu.swift */; };
+		33A6D9D420920ECD00FD0C1F /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A6D9D320920ECD00FD0C1F /* MenuItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		338E80032080D80B0090311E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		338E80052080D80B0090311E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		338E800B2080D89D0090311E /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
+		33A6D9D320920ECD00FD0C1F /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,12 +61,21 @@
 				338E7FF92080D80A0090311E /* AppDelegate.swift */,
 				338E7FFB2080D80A0090311E /* ViewController.swift */,
 				338E7FFD2080D80A0090311E /* Main.storyboard */,
-				338E800B2080D89D0090311E /* Menu.swift */,
+				33A6D9D220920EB800FD0C1F /* Models */,
 				338E80002080D80B0090311E /* Assets.xcassets */,
 				338E80022080D80B0090311E /* LaunchScreen.storyboard */,
 				338E80052080D80B0090311E /* Info.plist */,
 			);
 			path = Restaurant;
+			sourceTree = "<group>";
+		};
+		33A6D9D220920EB800FD0C1F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				338E800B2080D89D0090311E /* Menu.swift */,
+				33A6D9D320920ECD00FD0C1F /* MenuItem.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				338E800C2080D89D0090311E /* Menu.swift in Sources */,
+				33A6D9D420920ECD00FD0C1F /* MenuItem.swift in Sources */,
 				338E7FFC2080D80A0090311E /* ViewController.swift in Sources */,
 				338E7FFA2080D80A0090311E /* AppDelegate.swift in Sources */,
 			);
