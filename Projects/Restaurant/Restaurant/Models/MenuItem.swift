@@ -11,7 +11,30 @@ import Foundation
 struct MenuItem {
 
     enum MenuCategory {
-        case appetizer, first, main, desert, drink
+        case appetizer
+        case first
+        case main
+        case desert
+        case drink
+
+        static var allCases: [MenuCategory] {
+            return [.appetizer, .first, .main, .desert, .drink]
+        }
+
+        var emojiValue: String {
+            switch self {
+            case .appetizer:
+                return "🥜"
+            case .first:
+                return "🍤"
+            case .main:
+                return "🍝"
+            case .desert:
+                return "🍰"
+            case .drink:
+                return "🍹"
+            }
+        }
     }
 
     let name: String
