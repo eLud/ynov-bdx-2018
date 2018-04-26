@@ -57,7 +57,7 @@
                                             </label>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="szc-iU-9mk">
                                                 <rect key="frame" x="96" y="0.0" width="263" height="128.5"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="backgroundColor" red="0.95296637055837563" green="0.95296637055837563" blue="0.95296637055837563" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" priority="750" constant="128" id="xBd-Ak-t8N"/>
                                                 </constraints>
@@ -73,7 +73,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="idL-zo-NlX">
                                                 <rect key="frame" x="0.0" y="21" width="189" height="108"/>
                                                 <subviews>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="quW-fP-6yh">
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="quW-fP-6yh">
                                                         <rect key="frame" x="0.0" y="0.0" width="189" height="30"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c1L-iT-FsS">
@@ -83,10 +83,10 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rfc-3d-Pny">
-                                                                <rect key="frame" x="39" y="0.0" width="150" height="30"/>
+                                                                <rect key="frame" x="47" y="0.0" width="142" height="30"/>
                                                                 <nil key="textColor"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                                <textInputTraits key="textInputTraits"/>
+                                                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                                             </textField>
                                                         </subviews>
                                                     </stackView>
@@ -122,6 +122,7 @@
                                             </stackView>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fDr-DU-lth">
                                                 <rect key="frame" x="209" y="0.0" width="150" height="150"/>
+                                                <color key="backgroundColor" red="0.7879129217916726" green="0.85643953451505417" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="150" id="k9K-Cm-hVk"/>
                                                     <constraint firstAttribute="width" secondItem="fDr-DU-lth" secondAttribute="height" multiplier="1:1" id="pgW-GT-5DN"/>
@@ -153,6 +154,15 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="categorySegmentedControl" destination="JTM-wa-3cB" id="y4f-cy-JXU"/>
+                        <outlet property="descriptionTextView" destination="szc-iU-9mk" id="wfO-n4-eXA"/>
+                        <outlet property="imageView" destination="fDr-DU-lth" id="Dp2-Dr-AP0"/>
+                        <outlet property="isGlutenFreeSwitch" destination="XTU-zJ-XWp" id="hXQ-PZ-pdp"/>
+                        <outlet property="isVeganSwitch" destination="0W9-A9-NlW" id="w8q-TN-XUy"/>
+                        <outlet property="nameTextField" destination="WMZ-jz-2mZ" id="Vy4-bq-7E8"/>
+                        <outlet property="priceTextField" destination="rfc-3d-Pny" id="cIz-EB-0D4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
