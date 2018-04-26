@@ -18,6 +18,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var isGlutenFreeSwitch: UISwitch!
     @IBOutlet weak var imageView: UIImageView!
 
+    var menu = Menu(name: "Test")
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -27,6 +29,21 @@ class ViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+
+    @IBAction func saveItem(_ sender: UIButton) {
+
+        guard categorySegmentedControl.selectedSegmentIndex != UISegmentedControlNoSegment else { return }
+        let category = MenuItem.MenuCategory.allCases[categorySegmentedControl.selectedSegmentIndex]
+        guard let name = nameTextField.text, name.count > 0 else { return }
+        guard let description = descriptionTextView.text, description.count > 0 else { return }
+        guard let priceString = priceTextField.text, let priceDouble = Double(priceString) else { return }
+        let isVegan = isVeganSwitch.isOn
+        let isGlutenFree = isGlutenFreeSwitch.isOn
+
+        let item = MenuItem(name: name, itemDetails: description, price: priceDouble, category: category, imageURL: nil, isVegan: isVegan, isGlutenFree: isGlutenFree)
+
+        menu.add(item)
     }
 
     private func configureUI() {

@@ -41,7 +41,7 @@ struct MenuItem {
     var itemDetails: String
     var price: Double
     let category: MenuCategory
-    var imageURL: String
+    var imageURL: String?
 
     var isVegan: Bool
     var isGlutenFree: Bool
