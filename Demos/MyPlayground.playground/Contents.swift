@@ -83,12 +83,63 @@ struct Personne {
     var age: Int
 }
 
-let p1 = Person(name: "Jack", age: 24)
+var p1 = Person(name: "Jack", age: 24)
 let p2 = Personne(name: "Jack", age: 24)
 p1.age = 30
 p1.age
 
 p1 = Person(name: "toto", age: 0)
+
+
+//: # Type Casting
+
+class Animal {
+    func test(){}
+}
+
+class Dog: Animal {
+    func walk() {}
+}
+class Bird: Animal {
+    func cleanCage() {}
+}
+class Cat: Animal {
+    func cleanLitterBox() {}
+}
+
+let aCat = Cat()
+let aBird = Bird()
+let aDog = Dog()
+
+let allAnimals = [aCat, aDog, aBird]
+
+for a in allAnimals {
+
+
+    // IS
+    if a is Cat {
+        print("It's a cat")
+    } else if a is Dog {
+        print("It's a dog")
+    } else if a is Bird {
+        print("It's a bird")
+    } else {
+        print("It's something")
+    }
+
+    //AS
+    if let dog = a as? Dog {
+        dog.walk()
+    } else if let cat = a as? Cat {
+        cat.cleanLitterBox()
+    } else if let bird = a as? Bird {
+        bird.cleanCage()
+    }
+
+//    guard let dog = a as? Dog else { fatalError() }
+}
+
+
 
 
 
