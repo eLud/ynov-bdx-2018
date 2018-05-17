@@ -14,6 +14,7 @@
 		338E80042080D80B0090311E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 338E80022080D80B0090311E /* LaunchScreen.storyboard */; };
 		338E800C2080D89D0090311E /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338E800B2080D89D0090311E /* Menu.swift */; };
 		33A6D9D420920ECD00FD0C1F /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A6D9D320920ECD00FD0C1F /* MenuItem.swift */; };
+		33E7821520935F5700CCB2E2 /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E7821420935F5700CCB2E2 /* MenuTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		338E80052080D80B0090311E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		338E800B2080D89D0090311E /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
 		33A6D9D320920ECD00FD0C1F /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
+		33E7821420935F5700CCB2E2 /* MenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 			children = (
 				338E7FF92080D80A0090311E /* AppDelegate.swift */,
 				338E7FFB2080D80A0090311E /* ViewController.swift */,
+				33E7821420935F5700CCB2E2 /* MenuTableViewController.swift */,
 				338E7FFD2080D80A0090311E /* Main.storyboard */,
 				33A6D9D220920EB800FD0C1F /* Models */,
 				338E80002080D80B0090311E /* Assets.xcassets */,
@@ -152,6 +155,7 @@
 			files = (
 				338E800C2080D89D0090311E /* Menu.swift in Sources */,
 				33A6D9D420920ECD00FD0C1F /* MenuItem.swift in Sources */,
+				33E7821520935F5700CCB2E2 /* MenuTableViewController.swift in Sources */,
 				338E7FFC2080D80A0090311E /* ViewController.swift in Sources */,
 				338E7FFA2080D80A0090311E /* AppDelegate.swift in Sources */,
 			);
